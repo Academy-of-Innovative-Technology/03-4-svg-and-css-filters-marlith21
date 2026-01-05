@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Filter Project</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-      <style>
-        
-      </style>
-    </head>
-    <body>
-      <a href="index.html">SVG Filters</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters Example</title>
+    <style>
+        /* Aplicando diferentes filtros CSS a las imágenes */
+        .image1 {
+            filter: blur(5px); /* Desenfoque de 5px */
+        }
 
+        .image2 {
+            filter: brightness(1.5); /* Aumenta el brillo en un 50% */
+        }
 
-        <p>Blur</p>
-        <img src="src/img/flex2.jpeg" class="blur">
+        .image3 {
+            filter: contrast(150%); /* Aumenta el contraste al 150% */
+        }
 
-        <p>Brightness</p>
-       <img src="src/img/flex2.jpeg" class="brightness">
+        .image4 {
+            filter: grayscale(100%); /* Convierte la imagen a blanco y negro */
+        }
 
-        <p>Contrast</p>
-       <img src="src/img/flex2.jpeg" class="contrast">
+        .image5 {
+            filter: sepia(80%); /* Aplica un tono sepia al 80% */
+        }
+    </style>
+</head>
+<body>
 
-        <p>Drop Shadow</p>
-       <img src="src/img/flex2.jpeg" class="drop-shadow">
+    <!-- Imágenes con diferentes filtros CSS aplicados -->
+    <img src="https://www.w3schools.com/w3images/fjords.jpg" alt="Image 1" class="image1" width="300">
+    <img src="https://www.w3schools.com/w3images/Lights.jpg" alt="Image 2" class="image2" width="300">
+    <img src="https://www.w3schools.com/w3images/mountains.jpg" alt="Image 3" class="image3" width="300">
+    <img src="https://www.w3schools.com/w3images/rock.jpg" alt="Image 4" class="image4" width="300">
+    <img src="https://www.w3schools.com/w3images/snow.jpg" alt="Image 5" class="image5" width="300">
 
-        <p>Grayscale</p>
-       <img src="src/img/flex2.jpeg" class="grayscale">
-
-        <p>Hue Rotate</p>
-       <img src="src/img/flex2.jpeg" class="hue-rotate">
-
-        <p>Invert</p>
-       <img src="src/img/flex2.jpeg" class="invert">
-
-        <p>Opacity</p>
-       <img src="src/img/flex2.jpeg" class="opacity">
-
-        <p>Saturate</p>
-       <img src="src/img/flex2.jpeg" class="saturate">
-
-        <p>Sepia</p>
-       <img src="src/img/flex2.jpeg" class="sepia">
-
-    </body>
-</html>
+</body>
+</html

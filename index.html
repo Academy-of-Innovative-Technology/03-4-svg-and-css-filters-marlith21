@@ -1,15 +1,44 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>03.4 - SVG and CSS Filters</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Filter Example</title>
+    <style>
+        /* Aplicando el filtro SVG al ícono de la casa */
+        .home-icon {
+            filter: url(#blur-effect); /* Aplicando el filtro de desenfoque */
+        }
+
+        /* Aplicando el filtro SVG al ícono de la estrella */
+        .star-icon {
+            filter: url(#sepia-effect); /* Aplicando el filtro sepia */
+        }
+    </style>
 </head>
-
 <body>
- <a href="filters.html">CSS Filters</a>
-</body>
 
+    <!-- Primer ícono SVG: Casa -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" class="home-icon">
+        <defs>
+            <!-- Definición del filtro de desenfoque -->
+            <filter id="blur-effect">
+                <feGaussianBlur in="SourceGraphic" stdDeviation="4" />
+            </filter>
+        </defs>
+        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+
+    <!-- Segundo ícono SVG: Estrella -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100" class="star-icon">
+        <defs>
+            <!-- Definición del filtro sepia -->
+            <filter id="sepia-effect">
+                <feColorMatrix type="matrix" values="0.393 0.769 0.189 0 0 0.349 0.686 0.168 0 0 0.272 0.534 0.131 0 0 0 0 0 0 1 0" />
+            </filter>
+        </defs>
+        <path d="M12 2l2.4 7.6h7.8l-6 4.8 2.4 7.6-6-4.8-6 4.8 2.4-7.6-6-4.8h7.8z"/>
+    </svg>
+
+</body>
 </html>
